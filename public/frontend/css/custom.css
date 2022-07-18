@@ -1,0 +1,80 @@
+* {
+    /* font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif; */
+    font-family: "Roboto", sans-serif;
+    /* font-family: "Ubuntu", sans-serif; */
+}
+
+.checkout-form label {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.checkout-form input {
+    font-size: 14px;
+    padding: 5px;
+    font-weight: 400;
+}
+
+/* order-details-css */
+.order-details label {
+    font-size: 12px;
+    font-weight: 700px;
+}
+
+.order-details div {
+    font-size: 14px;
+    padding: 5px;
+}
+
+/* search-bar */
+.search-bar {
+    width: 30%;
+    /* width: 40%;
+    margin-left: 5%; */
+}
+
+.ui-menu {
+    z-index: 3500 !important;
+    /* z index = untuk overlapping */
+}
+
+/* rating */
+.rating-css div {
+    color: #ffe400;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+.rating-css input {
+    display: none;
+}
+.rating-css input + label {
+    font-size: 60px;
+    text-shadow: 1px 1px 0 #8f8420;
+    cursor: pointer;
+}
+.rating-css input:checked + label ~ label {
+    color: #b4afaf;
+}
+.rating-css label:active {
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
+
+/* End of Star Rating */
+
+/* ratins */
+.checked {
+    color: #ffd900;
+}
+
+/* whatsapp */
+.whatsapp-chat {
+    bottom: 10px;
+    left: 10px;
+    position: fixed;
+}
