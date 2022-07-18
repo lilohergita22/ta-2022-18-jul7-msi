@@ -69,7 +69,7 @@ My Orders
                                     <tr>
                                         <td>{{ $item->products->name }}</td>
                                         <td>{{ $item->qty }}</td>
-                                        <td>Rp. {{ $item->price }}</td>
+                                        <td>{{ "Rp. " . number_format($item->price, 2, ',', '.') }}</td>
                                         <td>
                                             <img src="{{ asset('assets/upload/products/'.$item->products->image) }}" width="50px" alt="">
                                         </td>
@@ -83,7 +83,7 @@ My Orders
 
 
 
-                            <h4 class="px-2">Grand Total : Rp. <span class="float-end">{{ $orders->total_price }}</span></h4>
+                            <h4 class="px-2">Grand Total : Rp. <span class="float-end">{{ "Rp. " . number_format($orders->total_price, 2, ',', '.') }}</span></h4>
                             <h6 class="px-2">Payment Mode : Rp. {{ $orders->payment_mode }}</h6>
                         </div>
                     </div>

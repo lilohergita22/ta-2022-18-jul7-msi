@@ -34,6 +34,8 @@ My Cart
             @php $total = 0; @endphp
             @foreach ($cartitems as $item)
             <div class="row product_data">
+
+
                 <div class="col-md-2 my-auto">
                     <img src="{{ asset('assets/upload/products/'.$item->products->image) }}" height="70px" width="100px" alt="Image Here">
                 </div>
@@ -41,7 +43,7 @@ My Cart
                     <h6>{{ $item->products->name }}</h6>
                 </div>
                 <div class="col-md-2 my-auto">
-                    <h6> Rp.{{ $item->products->selling_price }}</h6>
+                    <h6>{{ "Rp. " . number_format($item->products->selling_price, 2, ',', '.') }}</h6>
                 </div>
                 <div class="col-md-3 my-auto">
                     <input type="hidden" class="prod_id" value="{{ $item->prod_id }}">
@@ -68,7 +70,7 @@ My Cart
 
 
         <div class="card-footer">
-            <h6>Total Price : Rp. {{ $total }}
+            <h6>Total Price : {{ "Rp. " . number_format($total, 2, ',', '.') }}
                 <a href="{{ url('checkout') }}" class="btn btn-outline-success float-end">Proceed to Checkout</a>
             </h6>
         </div>

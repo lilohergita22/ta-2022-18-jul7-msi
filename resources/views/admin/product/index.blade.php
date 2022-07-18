@@ -29,7 +29,7 @@
                     <td>{{ $item->id }}</td>
                     <td>{{ $item->category->name }}</td>
                     <td>{{ $item->name }}</td>
-                    <td>Rp. {{ $item->selling_price }}</td>
+                    <td>{{ "Rp. " . number_format($item->selling_price, 2, ',', '.') }}</td>
                     <td>
                         <img src="{{ asset('assets/upload/products/'.$item->image) }}" class="cate-image" alt="Image here">
                     </td>

@@ -17,34 +17,43 @@
 <div class="py-5">
     <div class="container">
         <div class="row">
+
+
+
             <h2>{{ $category->name }}</h2>
             @foreach ($products as $prod)
             <div class="col-md-3 mb-3">
                 <div class="card">
-                    <!-- <img src="{{ asset('assets/upload/products/'.$prod->image) }}" alt="Product Image">
-                    <div class="card-body">
-                        <h5>{{ $prod->name }}</h5>
-                        <span class="float-start">{{ $prod->selling_price }}</span>
-                        <span class="float-end"> <s>{{ $prod->original_price }}</s> </span>
-                    </div> -->
+
+
                     <a href="{{ url('view-category/'.$category->slug.'/'.$prod->slug) }}" style="width: 18rem;">
-                        <img src="{{ asset('assets/upload/products/'.$prod->image) }}" alt="Product Image" style="width: 18rem;">
+                        <img src="{{ asset('assets/upload/products/'.$prod->image) }}" alt="Product Image" style="width: 10rem;">
                         <div class="card-body">
                             <h5>{{ $prod->name }}</h5>
-                            <span class="float-start">{{ $prod->selling_price }}</span>
-                            <span class="float-end"> <s>{{ $prod->original_price }}</s> </span>
+                            {{-- <span class="float-start">{{ "Rp. " . number_format($prod->selling_price, 2, ',', '.') }}</span>
+                            <span class="float-end"> <s>{{ "Rp. " . number_format($prod->original_price, 2, ',', '.') }}</s> </span> --}}
+                        </div>
+                        <div class="harga">
+                            <div class="d-flex justify-content-start">
+                                <span class="fw-bold fs-6">{{ "Rp. " . number_format($prod->selling_price, 2, ',', '.') }}</span>
+                                <span class="fw-bold fs-6">{{ "Rp. " . number_format($prod->original_price, 2, ',', '.') }}</span>
+                            </div>
+
+
+                            {{-- <div class="row">
+                                <div class="col">
+                                    <button type="button" class="btn btn-outline-primary">{{ "Rp. " . number_format($prod->selling_price, 2, ',', '.') }}</button>
+                            <button type="button" class="btn btn-outline-danger">{{ "Rp. " . number_format($prod->original_price, 2, ',', '.') }}</button>
+                                </div>
+                            </div> --}}
                         </div>
                     </a>
 
+                    {{-- <span class="float-end"> <s>{{ "Rp. " . number_format($prod->original_price, 2, ',', '.') }}</s> </span>
+                            <!-- echo "Rp. " . number_format($total, 2, ',', '.'); --> --}}
 
-                    <!-- <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div> -->
+
+                    
                 </div>
             </div>
             @endforeach

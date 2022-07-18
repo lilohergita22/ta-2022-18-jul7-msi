@@ -40,7 +40,7 @@ Orders
                             <tr>
                                 <td>{{ date('d-m-Y', strtotime($item->created_at)) }}</td>
                                 <td>{{ $item->tracking_no }}</td>
-                                <td>Rp. {{ $item->total_price }}</td>
+                                <td>{{ "Rp. " . number_format($item->total_price, 2, ',', '.') }}</td>
                                 <td>{{ $item->status == '0' ? 'pending' : 'completed' }}</td>
                                 <td>
                                     <a href="{{ url('admin/view-order/'.$item->id) }}" class="btn btn-primary">View</a>

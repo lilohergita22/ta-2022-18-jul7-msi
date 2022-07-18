@@ -87,6 +87,18 @@ Checkout Page
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="col-md-5">
                 <div class="card">
                     <div class="card-body">
@@ -120,7 +132,7 @@ Checkout Page
                                     <td>{{ $item->products->name }}</td>
                                     <td>{{ $item->prod_qty }}</td>
                                     {{-- <td> Rp. {{ $item->products->selling_price }}</td> --}}
-                                    <td> Rp. {{ $total }}</td>
+                                    <td>{{ "Rp. " . number_format($total, 2, ',', '.') }}</td>
 
                                     @php $grandTotal = $grandTotal + $total; @endphp
                                 </tr>
@@ -131,11 +143,11 @@ Checkout Page
                         </table>
 
 
-                        <h6 class="px-6">Grand Total <span class="float-end">Rp. {{ $grandTotal }}</span></h6>
+                        <h6 class="px-6">Grand Total <span class="float-end">{{ "Rp. " . number_format($grandTotal, 2, ',', '.') }}</span></h6>
                         <hr>
-                        <!-- <div class="d-grid gap-2">
+                        {{-- <!-- <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-success float-end">Place Order</button>
-                        </div> -->
+                        </div> --> --}}
                         <input type="hidden" name="payment_mode" value="COD">
                         <button type="submit" class="btn btn-success w-100">Place Oder | COD</button>
                         <button type="button" class="btn btn-primary w-100 mt-3 mb-3 razorpay_btn">Pay with Razorpay</button>

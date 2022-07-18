@@ -55,15 +55,16 @@
         </div>
     </div>
 </div>
+<!-- Modal -->
 
 
-<!-- <div class="py-3 mb-4 shadow-sm bg-warning border-top">
+{{-- <!-- <div class="py-3 mb-4 shadow-sm bg-warning border-top">
     <div class="container">
         <h6 class="mb-0">Collections / {{ $products->category->name }} / {{ $products->name }} </h6>
     </div>
-</div> -->
+</div> --> --}}
 
-<!-- y -->
+<!-- y  navbar-->
 <div class="py-3 mb-4 shadow-sm bg-warning border-top">
     <div class="container">
         <h6 class="mb-0">
@@ -79,7 +80,7 @@
         </h6>
     </div>
 </div>
-<!-- y -->
+<!-- y  navbar-->
 
 <div class="container pb-5">
     <div class="product_data">
@@ -97,8 +98,8 @@
                     </h2>
 
                     <hr>
-                    <label class="me-3">Original Price : <s>Rp. {{ $products->original_price }}</s></label>
-                    <label class="me-3">Selling Price : Rp. {{ $products->selling_price }}</label>
+                    <label class="me-3">Original Price : <s>Rp. {{ "Rp. " . number_format($products->original_price, 2, ',', '.') }}</s></label>
+                    <label class="me-3">Original Price : <s>Rp. {{ "Rp. " . number_format($products->selling_price, 2, ',', '.') }}</s></label>
 
 
 
