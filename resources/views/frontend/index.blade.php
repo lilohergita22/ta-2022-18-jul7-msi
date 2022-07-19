@@ -77,10 +77,36 @@ welcome to eshop
 </div>
 
 
+<div class="py-5">
+    <h1>ini footer</h1>
+    <img src="assets/images/slider1.jpg" alt="" width="100%" height="50px">
+    <div class="row">
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
+
+    <div class="row">
+        <div class="col-sm-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, suscipit?
+        </div>
+        <div class="col-sm-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, suscipit?
+        </div>
+        <div class="col-sm-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, suscipit?
+        </div>
+        <div class="col-sm-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, suscipit?
+        </div>
+    </div>
+</div>
 
 
 
-<h1>Welcome</h1>
+
+
+<h1>bawah sendiri</h1>
 @endsection
 
 @section('scripts')

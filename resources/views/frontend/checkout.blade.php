@@ -167,7 +167,7 @@ Checkout Page
 
 
 @endsection
-<!-- @dump($cartitems) -->
+{{-- <!-- @dump($cartitems) --> --}}
 
 
 
