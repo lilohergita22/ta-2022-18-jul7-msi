@@ -26,7 +26,7 @@ My Orders
                             <tr>
                                 <th>Order Date</th>
                                 <th>Tracking Number</th>
-                                <th>Total Price</th>
+                                <th>Grand Total Price</th>
                                 <th>Status</th>
                                 <th>Action</th>
                             </tr>

@@ -76,31 +76,19 @@ welcome to eshop
     </div>
 </div>
 
-
+{{-- footer --}}
 <div class="py-5">
-    <h1>ini footer</h1>
-    <img src="assets/images/slider1.jpg" alt="" width="100%" height="50px">
-    <div class="row">
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-      </div>
-
-    <div class="row">
-        <div class="col-sm-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, suscipit?
-        </div>
-        <div class="col-sm-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, suscipit?
-        </div>
-        <div class="col-sm-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, suscipit?
-        </div>
-        <div class="col-sm-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, suscipit?
+    <div class="container">
+        <div class="row">
+            <h2>ini footer</h2>
+            <!-- owl carousel -->
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dolore inventore voluptatem accusantium eum alias, necessitatibus esse nam repudiandae adipisci, quis in doloribus id itaque molestiae eaque sequi impedit exercitationem hic tenetur porro quia aspernatur commodi! Tenetur, distinctio voluptatibus ipsum placeat ullam amet quisquam cupiditate architecto qui! Consequuntur saepe architecto, ipsa provident inventore ipsam placeat voluptatem, nemo soluta commodi expedita voluptatibus assumenda, debitis quam molestiae similique fugit voluptatum! Doloremque tempore, quisquam aliquid deleniti quidem modi sapiente ut commodi doloribus alias velit delectus ratione impedit quam earum omnis ab minima quo atque sequi! Voluptas minima iste earum. Voluptate nemo excepturi veniam.
+            </p>
         </div>
     </div>
 </div>
+{{-- footer --}}
 
 
 

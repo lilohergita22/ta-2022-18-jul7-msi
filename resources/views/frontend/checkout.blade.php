@@ -102,8 +102,8 @@ Checkout Page
             <div class="col-md-5">
                 <div class="card">
                     <div class="card-body">
-                        <h6>Order Details</h6>
-                        <!-- <div class="btn btn-primary">rusak</div> -->
+                        {{-- <h6>Order Details</h6>
+                        <!-- <div class="btn btn-primary">rusak</div> --> --}}
                         <hr>
 
 
